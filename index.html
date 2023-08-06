@@ -15,7 +15,7 @@
     
 </head>
 <body>
-   <nav class="flex justify-between my-1 mx-4">
+   <nav class="flex justify-between  items-center my-1 lg:mx-20  mx-4">
     <div class="flex justify-center items-center ">
         
     <i class="fa-solid fa-bars"></i>
@@ -28,8 +28,8 @@
     <div style="font-size: 12px;" class="bg-sky-50 text-blue-600  font-normal px-1 py-2 rounded-lg">Suggest me in 2mins</div>
 </div>
    </nav>
-   <div class="swiper py-8 mySwiper">
-    <div class="swiper-wrapper mx-3">
+   <div class="swiper py-8 w-11/12  mySwiper">
+    <div class="swiper-wrapper ">
       <div class="swiper-slide"><img  class="h-40 rounded-3xl" src="./1-cv-home-compare-banner.webp" alt=""></div>
       <div class="swiper-slide"><img  class="h-40 rounded-3xl" src="./1-cv-home-compare-banner.webp" alt=""></div>
       <div class="swiper-slide"><img  class="h-40 rounded-3xl" src="./1-cv-home-compare-banner.webp" alt=""></div>
@@ -41,25 +41,31 @@
     <div class="swiper-pagination "></div>
   </div>
   <div class="flex  flex-row justify-around items-center">
-    <div class="flex rounded-lg flex-col bg-slate-100 p-2 justify-center items-center">
-        <i class="fa-solid text-sm text-orange-500 fa-face-smile"></i>
-        <h1 class="font-bold text-sm">89,000+</h1>
-        <p style="font-size: 12px;">Trusted by Students</p>
+    <div class="flex rounded-lg flex-col lg:flex-row bg-slate-100 p-2 justify-center items-center">
+        <i class="fa-solid text-sm lg:text-2xl text-orange-500 fa-face-smile"></i>
+        <div class="flex flex-col justify-center items-center lg:mx-2 lg:items-start">
+        <h1 class="font-bold text-sm lg:text-2xl lg:font-extrabold">89,000+</h1>
+        <p  class="lg:text-lg text-xs">Trusted by Students</p>
     </div>
-    <div class="flex rounded-lg flex-col  justify-center p-2 bg-slate-100 items-center">
+    </div>
+    <div class="flex rounded-lg flex-col lg:flex-row  justify-center p-2 bg-slate-100 items-center">
         
-        <i class="fa-solid text-sm text-orange-500 fa-headset"></i>
-        <h1 class="font-bold text-sm">500+</h1>
-        <p style="font-size: 12px;">Expert Mentors</p>
+        <i class="fa-solid text-sm lg:text-2xl text-orange-500 fa-headset"></i>
+        <div class="flex flex-col  justify-center items-center lg:mx-2 lg:items-start">
+        <h1 class="font-bold text-sm lg:text-2xl lg:font-extrabold">500+</h1>
+        <p class="lg:text-lg text-xs">Expert Mentors</p>
+        </div>
     </div>
-    <div class="flex rounded-lg flex-col justify-center p-2 items-center bg-slate-100">
-        <img class="h-4" src="./search.png" alt="">
-        <h1 class="font-bold text-sm">4.9/5(537)</h1>
-        <p style="font-size: 12px;">Google rating</p>
+    <div class="flex rounded-lg flex-col lg:flex-row  justify-center p-2 bg-slate-100 items-center">
+        <img class="h-4 lg:h-8" src="./search.png" alt="">
+        <div class="flex flex-col  justify-center items-center lg:mx-2 lg:items-start">
+        <h1 class="font-bold text-sm lg:text-2xl lg:font-extrabold">4.9/5(537)</h1>
+        <p class="lg:text-lg text-xs">Google rating</p>
+        </div>
     </div>
   </div>
-  <div class="swiper my-4 MySwiper">
-    <div class="swiper-wrapper mx-8">
+  <div class="swiper my-4 w-11/12 MySwiper lg:hidden">
+    <div class="swiper-wrapper ">
       <div class="swiper-slide active:text-blue-500 active:underline text-sm font-bold">PG Courses</div>
       <div class="swiper-slide text-sm font-bold">UG Courses</div>
       <div class="swiper-slide text-sm font-bold">Executive Education</div>
@@ -73,7 +79,17 @@
     <div class="next"></div>
     <div class="prev"></div>
   </div>
-  <div class="bg-slate-100 flex  flex-col justify-center items-center rounded-xl mx-3">
+  <div class="flex justify-around my-6 w-11/12 items-start">
+    <div class="lg:flex flex-col hidden justify-start p-2 border border-gray-200 rounded-xl items-start">
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white rounded-lg">PG Courses</button>
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white rounded-lg">UG Courses</button>
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white  rounded-lg flex flex-col justify-center items-center">Executive Education<h1 class="text-xs font-medium text-blue-600 rounded-md px-2 py-1 bg-blue-50">(For Professional & CXO's)</h1></button>
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white  rounded-lg flex flex-col justify-center items-center">Job Guarantee<h1 class="text-xs font-medium  text-blue-600 rounded-md px-2 py-1 bg-blue-50">(Money Back)</h1></button>
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white rounded-lg">Doctorate/Ph.D</button>
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white rounded-lg">Skilling & Certificaate</button>
+        <button class="pl-8 pr-16 py-1.5 focus-within:bg-blue-600 text-lg focus:text-white rounded-lg">Advance Diploma</button>
+    </div>
+  <div class="bg-slate-100 flex  lg:w-1/2 p-3 flex-col justify-center items-center rounded-xl mx-3">
     <div class="flex flex-row w-full  justify-center items-center">
         <div class="flex flex-col w-1/3 bg-white m-2 rounded-xl justify-center items-center">
             <div class=" mb-4 flex flex-col  justify-center items-center">
@@ -148,8 +164,9 @@
        <button class="text-blue-500 border my-3 rounded-3xl px-3 py-0.5 border-blue-500">View all <i class="fa-solid text-blue-500 fa-arrow-right"></i></button>
     </div>
   </div>
-  <div class="swiper Swiper py-8 flex flex-row  ">
-    <button  class="button-prev  "><i class="fa-solid fa-chevron-left"></i></button>
+</div>
+  <div class="swiper Swiper w-11/12 py-8 flex flex-row  ">
+   
     <div class="swiper-wrapper   ">
       <div class="swiper-slide "><img class="rounded-xl h-20" src="./do-not-get-scammed-by-fake-university-websites.webp" alt=""></div>
       <div class="swiper-slide"><img class="rounded-xl h-20" src="./get-in-touch-with-experts-in-no-time.webp" alt=""></div>
@@ -159,14 +176,14 @@
       
     </div>
     
-   <button class="button-next  "><i class="fa-solid  fa-chevron-right"></i></button>
+   
    
     
     <div class="swiper-pagination"></div>
   </div>
-  <div>
-  <h1 class="text-2xl w-44  ml-5 font-bold">What Makes Us Stand <span class="text-blue-500 font-bold text-2xl">Apart</span></h1>
-  <div class="my-6 p-2">
+  <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center justify-start items-start">
+  <h1 class="text-2xl lg:text-5xl lg:w-1/2 w-44 lg:pl-16 lg:pr-20 ml-5 font-bold">What Makes Us Stand <span class="text-blue-500 lg:text-5xl font-bold text-2xl">Apart</span></h1>
+  <div class="my-6 lg:w-1/2 p-2">
    <div class="flex flex-roe justify-center items-center">
     <div class="flex w-1/2 p-2 mx-1 h-36 flex-col justify-start border border-s-4 border-s-blue-500 border-t-white border-gray-300 rounded-xl items-start">
         <img style="margin-top: -40px;" class="h-10 ml-3" src="./Students_Trust_College_Vidya_for_Unbiased_Counselling.svg" alt="">
@@ -196,12 +213,16 @@
    </div>
   </div>
 </div>
-<div class="bg-slate-100">
-    <div class="flex flex-col mx-2  justify-start items-start">
-    <h1 class="text-2xl  font-bold">College Vidya</h1>
+<div class="bg-slate-100 flex py-6 flex-col ">
+    <div class="flex flex-col mx-2 lg:ml-20  justify-start items-start">
+        <div class="flex flex-col mt-8 lg:flex-row">
+    <h1 class="text-2xl lg:text-3xl font-bold">College Vidya </h1>
     <h1 class="text-3xl font-bold text-blue-700">Your One Stop Solution</h1>
+</div>
     <p class="text-lg font-normal">Answer Simple questions and choose the best online uniersity for you anywhere, anytime</p>
 </div>
+<div class="flex flex-col lg:flex-row">
+<div  class="lg:w-1/2 lg:mx-14 ">
 <div class="flex flex-row bg-white rounded-lg px-1 py-2 my-2 shadow-md mx-2 justify-start items-start">
     <div class="mx-4 mt-2">
         <i class="fa-solid  border border-orange-400 px-4 py-2 rounded-md text-blue-800 text-2xl fa-up-long"></i>
@@ -248,7 +269,7 @@
     </div>
 </div>
 </div>
-<div style="background: url(mobileFrame2.webp); background-repeat: no-repeat; background-size: 180px;  z-index: 2;" class="swiper h-[480px] Swiper py-8   ">
+<div style="background: url(mobileFrame2.webp); background-repeat: no-repeat; background-size: 180px;  z-index: 2;" class="swiper h-[480px] lg:w-1/2 Swiper py-8   ">
    
     <div  class="swiper-wrapper    ">
       <div class="swiper-slide "></div>
@@ -264,15 +285,18 @@
     
     <div class="swiper-pagination"></div>
   </div>
-  <div class="bg-slate-900">
+</div>
+</div>
+
+  <div class="bg-slate-950 py-12">
     <div class="text-white flex flex-col mx-4 justify-center items-center">
-        <h2 class="text-xl font-extrabold" >Right Guidance from Experts</h2>
-        <h2 class="text-center">Colege Vidya has a team of 2500+ experts who are there to assist you and give you the righjt guidance for succesfull career ahead</h2>
+        <h2 class="text-xl my-6 lg:text-4xl font-extrabold" >Right Guidance from Experts</h2>
+        <h2 class="text-center lg:w-1/2 lg:text-lg">Colege Vidya has a team of 2500+ experts who are there to assist you and give you the righjt guidance for succesfull career ahead</h2>
     </div>
-    <div class="swiper swiper py-8 w-10/12  ">
+    <div class="swiper iper py-8 w-10/12   ">
    
         <div  class="swiper-wrapper    ">
-          <div style="background: url(amit.webp); background-repeat: no-repeat; background-size: cover;" class="swiper-slide  flex flex-col justify-center  items-center ">
+          <div style="background: url(amit.webp); background-repeat: no-repeat; background-size: cover;" class="swiper-slide rounded-lg  flex flex-col justify-center  items-center ">
         <div class="flex flex-row w-11/12 justify-between items-center">
             <div class="bg-white rounded-sm px-1">4.2</div>
             <div class="bg-green-100 px-3 rounded-lg "><h1 class="text-2xl font-semibold text-green-600">1278+</h1>
@@ -288,7 +312,7 @@
             </button>
         </div>
     </div>
-    <div style="background: url(rohitp.webp); background-repeat: no-repeat; background-size: cover;" class="swiper-slide  flex flex-col justify-center  items-center ">
+    <div style="background: url(rohitp.webp); background-repeat: no-repeat; background-size: cover;" class="swiper-slide  flex flex-col rounded-lg justify-center  items-center ">
         <div class="flex flex-row w-11/12 justify-between items-center">
             <div class="bg-white rounded-sm px-1">4.2</div>
             <div class="bg-green-100 px-3 rounded-lg "><h1 class="text-2xl font-semibold text-green-600">1278+</h1>
@@ -304,7 +328,7 @@
             </button>
         </div>
     </div>
-    <div style="background: url(raghvendra.webp); background-repeat: no-repeat; background-size: cover;" class="swiper-slide  flex flex-col justify-center  items-center ">
+    <div style="background: url(raghvendra.webp); background-repeat: no-repeat; background-size: cover;" class="swiper-slide  flex flex-col rounded-lg justify-center  items-center ">
         <div class="flex flex-row w-11/12 justify-between items-center">
             <div class="bg-white rounded-sm px-1">4.2</div>
             <div class="bg-green-100 px-3 rounded-lg "><h1 class="text-2xl font-semibold text-green-600">1278+</h1>
@@ -328,35 +352,45 @@
   <div class="flex flex-col my-8 justify-center items-center">
     <h1 class="text-center m-4 text-2xl font-bold">Approved Online & Distance Education Universities</h1>
     <div class="flex justify-center items-center flex-wrap ">
-        <img  class=" p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./chandigarh-online-university-logo.webp" alt="">
-        <img class=" p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./deakin-business-school-logo-with-upgrad.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./amity-online-university-logo.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./dy-patil-vidyapeeth-university-online.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./iit-bangalore-online.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./Jain-University-logo.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./Lovely-Professional-University-Online-logo.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./liba-loyola-institute-of-business-administration-logo.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./online-golden-gate-logo.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./iim-kozhikode-logo.webp" alt="">
-        <img class="p-3 rounded-xl m-2 shadow-2xl border border-gray-200 w-1/4" src="./sastra-online-university-with-tcs-logo.webp" alt="">
+        <img  class=" p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./chandigarh-online-university-logo.webp" alt="">
+        <img class=" p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./deakin-business-school-logo-with-upgrad.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./amity-online-university-logo.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./dy-patil-vidyapeeth-university-online.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./iit-bangalore-online.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./Jain-University-logo.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./Lovely-Professional-University-Online-logo.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./liba-loyola-institute-of-business-administration-logo.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./online-golden-gate-logo.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./iim-kozhikode-logo.webp" alt="">
+        <img class="p-3 rounded-md m-2 shadow-2xl border border-gray-200 w-32" src="./sastra-online-university-with-tcs-logo.webp" alt="">
         
     </div>
-   
-
     <button class="text-blue-500  my-3 text-lg rounded-lg px-3 py-0.5 bg-blue-50">View More Universities </button>
 </div>
 <div>
-    <div class="mx-4">
-        <h1>Trusted Voices</h1>
-        <h1 class="text-4xl text-blue-700 font-bold">Hear them <span class="text-black">out</span></h1>
+    <div class="mx-4 lg:mx-20">
+        <h1 class="lg:text-lg">Trusted Voices</h1>
+        <h1 class="text-4xl lg:text-5xl text-blue-700 font-bold">Hear them <span class="text-black">out</span></h1>
     </div>
-    <div  class="swiper my-8  Swiper w-8/12 ">
+    <div  class="swiper my-8  per w-8/12 ">
    
-        <div  class="swiper-wrapper    ">
-          <div class="swiper-slide"><img class="rounded-3xl h-96"  src="./2_cv_500_experts-banner.webp" alt=""></div>
-          <div class="swiper-slide"><img class="rounded-3xl h-96"  src="./2_cv_500_experts-banner.webp" alt=""></div>
-          <div class="swiper-slide"><img class="rounded-3xl h-96"  src="./2_cv_500_experts-banner.webp" alt=""></div>
-        
+        <div  class="swiper-wrapper lg:w-11/12    ">
+          <div class="swiper-slide h-96 flex flex-col rounded-xl lg:w-1/4 justify-center items-center bg-gray-950">
+            <div class="bg-white my-2 px-2 text-sm rounded-3xl"><i class="fa-solid fa-eye"></i> 9.7k</div>
+            <img class="mb-8" src="./3_Varun_BA_LPU.webp" alt="">
+          </div>
+          <div class="swiper-slide h-96 flex flex-col rounded-xl lg:w-1/4 justify-center items-center bg-gray-950">
+            <div class="bg-white my-2 px-2 text-sm rounded-3xl"><i class="fa-solid fa-eye"></i> 9.7k</div>
+            <img class="mb-8" src="./4_SHUBHAM_MCA_CU.webp" alt="">
+          </div>
+          <div class="swiper-slide h-96 flex flex-col rounded-xl lg:w-1/4 justify-center items-center bg-gray-950">
+            <div class="bg-white my-2 px-2 text-sm rounded-3xl"><i class="fa-solid fa-eye"></i> 9.7k</div>
+            <img class="mb-8" src="./8_SANDHIYA_MCA_CU.webp" alt="">
+          </div>
+          <div class="swiper-slide h-96 flex flex-col rounded-xl lg:w-1/4 justify-center items-center bg-gray-950">
+            <div class="bg-white my-2 px-2 text-sm rounded-3xl"><i class="fa-solid fa-eye"></i> 9.7k</div>
+            <img class="mb-8" src="./11_Sachin_BA_AMITY.webp" alt="">
+          </div>
           
         </div>
         
@@ -367,11 +401,11 @@
       </div>
 </div>
 <div>
-    <div>
-        <h1 class="text-blue-700 ml-5 text-base font-normal">Find us in the News!</h1>
-        <h1 class="text-2xl font-bold ml-5 ">We've been in the News</h1>
+    <div class="lg:ml-16 my-8">
+        <h1 class="text-blue-700 ml-5 lg:text-lg  text-base font-normal">Find us in the News!</h1>
+        <h1 class="text-2xl lg:text-4xl lg:font font-bold ml-5 ">We've been in the News</h1>
     </div>
-    <div class="swiper swiper w-10/12">
+    <div class="swiper iper w-10/12">
         <div class="swiper-wrapper my-4 ">
           <div class="swiper-slide border shadow-2xl rounded-xl h-80 border-gray-300 p-2"><img class=""  src="./ani.webp" alt=""></div>
           <div class="swiper-slide border shadow-2xl rounded-xl h-80 border-gray-300 p-2"><img class=""  src="./toi.webp" alt=""></div>
@@ -383,9 +417,9 @@
     
 </div>
 <div class="bg-gray-900 text-white flex flex-col justify-center items-center">
-    <h1 class="text-5xl my-4 font-bold text-blue-700">89000+</h1>
-    <h1 class="text-base font-bold px-2 rounded-xl py-0.5 bg-blue-600 ">Students ne chuna</h1>
-    <h1 class="my-4 text-base">Sahio course, Sahi university and career path</h1>
+    <h1 class="text-5xl lg:text-8xl my-4 font-bold text-blue-700">89000+</h1>
+    <h1 class="text-base font-bold px-2 lg:px-4 lg:py-1 rounded-xl py-0.5 bg-blue-600 ">Students ne chuna</h1>
+    <h1 class="my-4 lg:text-lg text-base">Sahio course, Sahi university and career path</h1>
     <div class="swiper my-6 wiper w-10/12">
         <div class="swiper-wrapper  ">
           <div class="swiper-slide  rounded-xl"><img class="rounded-xl "  src="./11_Sachin_BA_AMITY.webp" alt=""></div>
@@ -400,45 +434,56 @@
       </div>
 </div>
 <div class="flex flex-col my-8 justify-center py-8  bg-slate-100 items-center">
-    <h1 class="text-3xl text-center font-bold">Lets clear up some doubts</h1>
-    <div class="flex justify-between bg-white border mt-8 border-gray-300 p-4 w-11/12 items-center">
+    <h1 class="text-3xl lg:text-4xl my-4 text-center font-bold">Lets clear up some doubts</h1>
+    <div class="flex justify-between bg-white border lg:w-3/5 mt-8 border-gray-300 p-4 w-11/12 items-center">
         <p class="px-2 mx-2 text-white bg-blue-500 rounded-full">1</p>
-        <h1 class="text-start ">Do payments made by students go directly to university account?</h1>
+        <h1 class="text-start lg:text-xl ">Do payments made by students go directly to university account?</h1>
         <i class="fa-solid text-lg mx-1 fa-angle-down"></i>
     </div>
-    <div class="flex justify-between bg-white border  border-gray-300 p-4 w-11/12 items-center">
+    <div class="flex justify-between bg-white border lg:w-3/5 border-gray-300 p-4 w-11/12 items-center">
         <p class="px-2 mx-2 text-white bg-blue-500 rounded-full">2</p>
-        <h1 class="text-start ">How college vidya is different from others?</h1>
+        <h1 class="text-start lg:text-xl ">How college vidya is different from others?</h1>
         <i class="fa-solid text-lg mx-1 fa-angle-down"></i>
     </div>
-    <div class="flex justify-between bg-white border  border-gray-300 p-4 w-11/12 items-center">
+    <div class="flex justify-between bg-white border lg:w-3/5 border-gray-300 p-4 w-11/12 items-center">
         <p class="px-2 mx-2 text-white bg-blue-500 rounded-full">3</p>
-        <h1 class="text-start ">Can there be errors in college vidya?</h1>
+        <h1 class="text-start lg:text-xl ">Can there be errors in college vidya?</h1>
         <i class="fa-solid text-lg mx-1 fa-angle-down"></i>
     </div>
-    <div class="flex justify-between bg-white border  border-gray-300 p-4 w-11/12 items-center">
+    <div class="flex justify-between bg-white border lg:w-3/5  border-gray-300 p-4 w-11/12 items-center">
         <p class="px-2 mx-2 bg-blue-500 text-white rounded-full">4</p>
-        <h1 class="text-start ">Are there any fee/charges for college vidya sevices?</h1>
+        <h1 class="text-start lg:text-xl  ">Are there any fee/charges for college vidya sevices?</h1>
         <i class="fa-solid text-lg mx-1 fa-angle-down"></i>
     </div>
 </div>
-<div class="flex flex-col justify-center   items-start">
-    <h1 class="text-2xl font-bold mx-4">Talk to Our Experts</h1>
-    <div class="mx-4 bg-blue-50  p-4 my-6 flex flex-col justify-center items-start">
+<div>
+<div class="flex flex-col lg:flex-row justify-center  mx-8  items-start">
+    <div class="lg:w-1/2">
+    <h1 class="text-2xl lg:text-4xl font-bold mx-4">Talk to Our Experts</h1>
+    <div class="mx-4 bg-blue-50  p-4 my-6 lg:w-1/2 flex flex-col justify-center items-start">
     <h1 style="margin-top: -29px;" class="px-4 py-1 bg-blue-600 rounded-lg text-white text-sm font-medium">Support</h1>
-    <h1><i class="fa-solid mt-4 fa-phone"></i> New students:</h1>
+    <div class="flex flex-col mt-4 lg:flex-row justify-center items-center">
+    <h1><i class="fa-solid  fa-phone"></i> New students:</h1>
     <h1 class="text-blue-600 font-bold">1802-6489-574</h1>
-    <h1><i class="fa-solid mt-4 fa-gear"></i> Existing students:</h1>
+</div>
+<div class="flex flex-col mt-4 lg:flex-row justify-center items-center">
+    <h1><i class="fa-solid  fa-gear"></i> Existing students:</h1>
     <h1 class="text-blue-600 font-bold">1802-6489-574</h1>
-    <h1><i class="fa-solid mt-4 fa-envelope"></i> Email:</h1>
+    </div>
+    <div class="flex flex-col mt-4 lg:flex-row justify-center items-center">
+    <h1><i class="fa-solid  fa-envelope"></i>Email:</h1>
     <h1 class="text-blue-600 font-bold">cvcare@collegevidya.com</h1>
-    <h1><i class="fa-solid mt-4 fa-map-pin"></i> Visit us:</h1>
+    </div>
+    <div class="flex flex-col mt-4 lg:flex-row justify-center items-center">
+    <h1><i class="fa-solid  fa-map-pin"></i> Visit us:</h1>
     <h1 class="text-blue-600 font-bold">(10AM to 7PM)</h1>
     </div>
-    <h1 class="text-sm font-bold mx-4">Need Answers? Call us!</h1>
-    <h1 class="text-sm mx-4 my-3">Our team of Experts are available for you round the clock</h1>
-    <button class="bg-gray-900 text-white px-4 mx-4 rounded-md py-2">Book Your 30min Expert Career Advice <i class="fa-solid fa-chevron-right"></i></button>
-    <div class="flex justify-center mx-4 my-6 items-center  flex-wrap">
+    </div>
+    <h1 class="text-sm font-bold my-3 lg:text-base mx-4">Need Answers? Call us!</h1>
+    <h1 class="text-sm mx-4 my-3 lg:text-base ">Our team of Experts are available for you round the clock</h1>
+    <button class="bg-gray-900 text-white px-4 mx-4 rounded-md my-3 py-2">Book Your 30min Expert Career Advice <i class="fa-solid fa-chevron-right"></i></button>
+</div>
+    <div class="flex justify-center mx-4 my-6 lg:w-1/2 items-center  flex-wrap">
      <img  class="w-1/4 my-2 mx-2 " src="./expert-team1.webp" alt="">
      <img class="w-1/4 my-2 mx-2 " src="./expert-team2.webp" alt="">
      <img class="w-1/4  my-2 mx-2 " src="./expert-team3.webp" alt="">
@@ -447,15 +492,19 @@
      <img class="w-1/4 my-2  mx-2" src="./expert-team6.webp" alt="">
     </div>
 </div>
-<div class="bg-gray-950 flex flex-col justify-center items-center mx-4 rounded-3xl  text-white">
-    <h1 class="text-xl mt-12  font-bold"><i class="fa-solid mx-8  fa-arrow-up-long"></i>Colege Vidya Checklist</h1>
+</div>
+<div class="flex justify-center items-center">
+<div class="bg-gray-950 flex flex-col lg:flex-row justify-around items-center mx-10 my-6 py-4 w-full rounded-3xl  text-white">
+    <h1 class="text-xl mt-12 lg:mt-0 lg:text-3xl  font-bold"><i class="fa-solid mx-8  fa-arrow-up-long"></i>Colege Vidya Checklist</h1>
     <button class="bg-white px-7 my-8 py-2 rounded-3xl text-black">View <i class="fa-solid fa-arrow-right-long"></i></button>
 </div>
-<div class="bg-gray-950 py-3  text-white mt-8">
-    <img class="h-12  mx-8 " src="./main-logo (1).webp" alt="">
+</div>
+<div class="bg-gray-950 py-3 flex flex-col lg:flex-row justify-center items-start px-8 text-white mt-8">
+    <div class="flex flex-col justify-start lg:w-1/4 items-start">
+    <img class="h-12 mx-8  " src="./main-logo (1).webp" alt="">
     <h1 class="text-2xl mx-4 my-3 w-1/2">GET THE RIGHT GUIDANCE WITH US</h1>
-    <div class="flex flex-wrap justify-start items-center">
-        <div class="bg-white flex justify-between my-6 w-48 mx-4 p-3 rounded-lg items-center">
+    <div class="flex flex-wrap lg:flex-col justify-start items-start">
+        <div class="bg-white flex  justify-between my-6 w-48 mx-4 p-3 rounded-lg items-center">
             <img class="h-8" src="./trust_pilot.webp" alt="">
             <H1 class="text-black">Trustpilot</H1>
             <h1 class="px-3 py-1 bg-blue-700 rounded-lg text-white">4.7 </h1>
@@ -466,7 +515,8 @@
             <h1 class="px-3 py-1 bg-blue-700 rounded-lg text-white">4.7 </h1>
         </div>
     </div>
-    <div>
+</div>
+    <div class="lg:w-1/4">
         <h1 class="font-bold mt-4 mx-4 ">Online & Distance MBA</h1>
         <div class="w-16 bg-white mb-4 h-0.5 mx-4"></div>
         <p class="text-gray-400 mx-4">Finanace</p>
@@ -477,8 +527,9 @@
         <p class="text-gray-400 mx-4">Retail</p>
         <p class="text-gray-400 mx-4">Data Science</p>
         <p class="text-gray-400 mx-4">Project Management</p>
+    
     </div>
-    <div>
+    <div class="lg:w-1/4">
         <h1 class="font-bold mt-4 mx-4 ">Online & Distance UG Courses</h1>
         <div class="w-16 bg-white mb-4 h-0.5 mx-4"></div>
         <p class="text-gray-400 mx-4">Btech</p>
@@ -489,8 +540,7 @@
         <p class="text-gray-400 mx-4">Retail</p>
         <p class="text-gray-400 mx-4">Data Science</p>
         <p class="text-gray-400 mx-4">Project Management</p>
-    </div>
-    <div>
+   
         <h1 class="font-bold mt-4 mx-4 ">Online & Distance PG Courses</h1>
         <div class="w-16 bg-white mb-4 h-0.5 mx-4"></div>
         <p class="text-gray-400 mx-4">Finanace</p>
@@ -502,7 +552,7 @@
         <p class="text-gray-400 mx-4">Data Science</p>
         <p class="text-gray-400 mx-4">Project Management</p>
     </div>
-    <div>
+    <div class="lg:w-1/4">
         <h1 class="font-bold mt-4 mx-4 ">Online & Distance  Best College For</h1>
         <div class="w-16 bg-white mb-4 h-0.5 mx-4"></div>
         <p class="text-gray-400 mx-4">Finanace</p>
@@ -517,17 +567,18 @@
     </div>
 
 </div>
-<div class="bg-gray-950 py-8  text-white">
-    <div>
+<div class="bg-gray-950 py-8  flex flex-col px-8 text-white">
+    <div class="flex flex-col lg:flex-row lg:mx-8 justify-start items-start lg:justify-center lg:items-center">
+    <div class="lg:w-1/4">
         <p class="text-gray-400 mx-4">Download The APP</p>
         <img class="h-12 mx-4 my-4" src="./appstore.webp" alt="">
         </div>
-        <div>
+        <div class="lg:w-1/2">
         <p class="text-gray-400 mx-4 my-4">The online portal of College Vidya is aimed to complete information to the students about every aspect of online education without being biased.
         </p>
         <p class="text-gray-400 mx-4">College Vidya gives the power to the students to get the best universities in online education. College Vidya's compare feature gives the comparison of every online university on the various parameters such as E-learning system, EMI, Faculties, and fees.</p>
     </div>
-    <div class="my-4">
+    <div class="my-4 lg:w-1/4">
         <p class="text-gray-400  my-4 mx-4">Contact us:</p>
         <p class="text-gray-400 mx-4">info@collegevidya.com</p>
         <div class="mx-4">
@@ -542,19 +593,22 @@
             <h1>1800-547-8576</h1>
         </div>
     </div>
-    <div class="flex flex-wrap  justify-center items-center">
-        <p class="text-gray-400 mx-2">About us</p>
-        <p class="text-gray-400 mx-2">Blog</p>
-        <p class="text-gray-400 mx-2">Become Business Associate</p>
-        <p class="text-gray-400 mx-2">For Corporates</p>
-        <p class="text-gray-400 mx-2">Sitemap</p>
-        <p class="text-gray-400 mx-2">Contact us</p>
-        <p class="text-gray-400 mx-2"><i class="fa-solid text-green-500 mx-2 fa-check"></i>Contact us</p>
-        <p class="text-gray-400 mx-2"><i class="fa-solid text-green-500 mx-2 fa-video"></i>Importanp Videos</p>
-        <p class="text-gray-400 mx-2">Our Trust</p>
-        
-    </div>
+    
 </div>
+<div class="flex flex-wrap my-8  justify-center items-center">
+    <p class="text-gray-400 mx-2">About us</p>
+    <p class="text-gray-400 mx-2">Blog</p>
+    <p class="text-gray-400 mx-2">Become Business Associate</p>
+    <p class="text-gray-400 mx-2">For Corporates</p>
+    <p class="text-gray-400 mx-2">Sitemap</p>
+    <p class="text-gray-400 mx-2">Contact us</p>
+    <p class="text-gray-400 mx-2"><i class="fa-solid text-green-500 mx-2 fa-check"></i>Contact us</p>
+    <p class="text-gray-400 mx-2"><i class="fa-solid text-green-500 mx-2 fa-video"></i>Importanp Videos</p>
+    <p class="text-gray-400 mx-2">Our Trust</p>
+    
+</div>
+</div>
+
 <div class="bg-white h-0.5 mx-4 "></div>
 <div class="bg-gray-950   text-white flex flex-col justify-center items-center">
     <h1 class="text-gray-400 text-xs mt-8 ">Terns & Conditions / Refund POlicy / Our Pliocy </h1>
@@ -567,7 +621,7 @@
 
   <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView:1.1,
+        slidesPerView:1,
         spaceBetween:10,
       cssMode: true,
     
@@ -590,8 +644,9 @@
       keyboard: true,
     });
     var swiper = new Swiper(".Swiper", {
-       slidesPerView:2.1,
+       slidesPerView:2,
        spaceBetween:10,
+       
       navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",
@@ -602,10 +657,16 @@
       mousewheel: true,
       keyboard: true,
     });
-    var swiper = new Swiper(".swiper", {
+    var swiper = new Swiper(".iper", {
+        
+        breakpoints:{
+        640:{
+            slidesPerView:3,
+            spaceBetween:30,
+        }
+        },
+      
         slidesPerView:1,
-       spaceBetween:10,
-     
       navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",
@@ -616,11 +677,38 @@
       mousewheel: true,
       keyboard: true,
     });
+    var swiper = new Swiper(".per", {
+        
+        breakpoints:{
+        640:{
+            slidesPerView:3,
+            spaceBetween:70,
+        }
+        },
+      
+        slidesPerView:1,
+      navigation: {
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+   
     var swiper = new Swiper(".wiper", {
         slidesPerView:3,
        spaceBetween:10,
        autoplay:{
         delay:1500,
+       },
+       breakpoints:{
+        640:{
+            slidesPerView:4,
+            spaceBetween:30,
+        }
        },
      
       navigation: {
